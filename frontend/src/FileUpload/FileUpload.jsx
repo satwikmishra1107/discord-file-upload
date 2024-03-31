@@ -82,7 +82,7 @@ const FileUpload = (props) => {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://localhost:8000/api/upload",
+        "https://two5mb.onrender.com/api/upload",
         formData,
         {
           headers: {

@@ -55,7 +55,7 @@ const UploadedFilesList = ({uploadedFiles}) => {
         [fileHash]: 0,
       }));
       const response = await fetch(
-        `http://localhost:8000/api/retrieve/${fileHash}?fileSize=${fileSize}&fileName=${fileName}`,
+        `https://two5mb.onrender.com/api/retrieve/${fileHash}?fileSize=${fileSize}&fileName=${fileName}`,
         {
           method: "GET",
           responseType: "blob",
