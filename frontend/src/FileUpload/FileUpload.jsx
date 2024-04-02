@@ -12,6 +12,11 @@ import {
   collection,
   getDocs,
 } from "firebase/firestore";
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const BASE_URL = process.env.BASE_URL
 
 const FileUpload = (props) => {
   const inputRef = useRef();
@@ -82,7 +87,7 @@ const FileUpload = (props) => {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "https://two5mb.onrender.com/api/upload",
+        `${BASE_URL}api/upload`,
         formData,
         {
           headers: {

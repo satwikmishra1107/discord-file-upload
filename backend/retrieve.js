@@ -8,13 +8,6 @@ const intents = [
   GatewayIntentBits.MessageContent,
 ];
 
-// const BOT_TOKEN =
-//   "MTIxNzE5MzM1ODc2MjQ0NjkzMA.Geh3-D.syQvVIhhHDZzmVfhs7aULYVeF1E1xBIFbIY0-A";
-// const channelId = "1219719049165144204";
-// const fileSize = 12186888;
-// const fileHash =
-//   "1aa31d8ea0e916039d05948be2341f6b85b52b7412bc14e90793cc97603c2da0";
-
 async function downloadAttachment(url) {
   try {
     // console.log(url);

@@ -3,11 +3,6 @@ import crypto from "crypto";
 
 const intents = [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages];
 
-// const BOT_TOKEN =
-// "MTIxNzE5MzM1ODc2MjQ0NjkzMA.Geh3-D.syQvVIhhHDZzmVfhs7aULYVeF1E1xBIFbIY0-A";
-// const channelId = "1220025255691554906";
-// const filePath = "video.mp4";
-
 //Reading the file and creating a hash
 
 async function readFileAndHash(data) {
