@@ -50,6 +50,7 @@ async function divideAndSendFile(channel, chunkSize, data) {
 //The mainsend function
 
 export async function mainsend(channelId, BOT_TOKEN, file) {
+
   const chunkSize = 1024 * 1024 * 23; //Denotes 2MB pieces
   const client = new Client({ intents });
   const fileSize = file.byteLength;
